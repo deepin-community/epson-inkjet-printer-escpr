@@ -1,0 +1,3 @@
+debian/printer-driver-escpr.ppd-updater usr/share/cups/ppd-updaters/
+usr/lib/cups/filter/*
+usr/lib/printer-driver-escpr/libescpr*.so.*

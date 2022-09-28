@@ -1,0 +1,45 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --with pyppd
+
+override_dh_autoreconf: m4
+	dh_autoreconf --as-needed
+
+m4:
+	mkdir $@
+
+override_dh_auto_configure:
+	cp m4-macros debian/m4-macros.backup
+	dh_auto_configure -- \
+		--libdir=/usr/lib/printer-driver-escpr/ \
+		--enable-static=no
+
+override_dh_makeshlibs:
+	dh_makeshlibs -X/usr/lib/printer-driver-escpr/libescpr
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f *.spec
+	- mv debian/m4-macros.backup m4-macros
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/tmp
+
+SOURCENAME=epson-inkjet-printer-escpr
+
+get-orig-source:
+	[ ! -z $(VERSION) ]
+	- uscan --verbose --no-symlink
+	if [ -r ../$(SOURCENAME)-$(VERSION)-1lsb3.2.src.rpm ]; then \
+	  rpm2cpio ../$(SOURCENAME)-$(VERSION)-1lsb3.2.src.rpm \
+	    | cpio --to-stdout --extract $(SOURCENAME)-$(VERSION)-1lsb3.2.tar.gz > \
+	    ../$(SOURCENAME)_$(VERSION).orig.tar.gz ; \
+	elif [ -r ../$(SOURCENAME)-$(VERSION)-1lsb3.2.tar.gz ]; then \
+	    ln -sf ./$(SOURCENAME)-$(VERSION)-1lsb3.2.tar.gz ../$(SOURCENAME)_$(VERSION).orig.tar.gz ; \
+	fi
+	[ -r ../$(SOURCENAME)_$(VERSION).orig.tar.gz ]
+	gbp import-orig --pristine-tar --no-merge ../$(SOURCENAME)_$(VERSION).orig.tar.gz
+	git debrebase new-upstream $(VERSION)

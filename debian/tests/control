@@ -1,0 +1,6 @@
+Tests: printer-driver-escpr
+Restrictions: needs-root
+Depends:
+ cups,
+ cups-client (>= 1.7.3-5~),
+ printer-driver-escpr,

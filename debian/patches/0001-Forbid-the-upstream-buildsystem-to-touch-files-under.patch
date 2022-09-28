@@ -1,0 +1,38 @@
+From: Didier Raboud <odyx@debian.org>
+Date: Tue, 27 Sep 2016 10:42:31 +0200
+Subject: Forbid the upstream buildsystem to touch files under debian/
+
+---
+ Makefile.am | 12 ------------
+ 1 file changed, 12 deletions(-)
+
+diff --git a/Makefile.am b/Makefile.am
+index 7d4149a..4f46571 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -24,10 +24,6 @@ DIST_SUBDIRS = $(SUBDIRS)
+ 
+ ACLOCAL_AMFLAGS = -I m4
+ 
+-noinst_DATA = \
+-	debian/control \
+-	debian/rules
+-
+ debian/control: $(srcdir)/Makefile $(srcdir)/debian/control.in
+ 	rm -f $@ $@.tmp; \
+ 	sed -e 's|[@]PACKAGE_BUGREPORT[@]|$(PACKAGE_BUGREPORT)|' \
+@@ -67,14 +63,6 @@ EXTRA_DIST = \
+ 	README \
+ 	README.ja \
+ 	bootstrap \
+-	debian/changelog \
+-	debian/compat \
+-	debian/control.in \
+-	debian/copyright \
+-	debian/docs \
+-	debian/postinst \
+-	debian/postrm \
+-	debian/rules.in \
+ 	epson-inkjet-printer-escpr.spec \
+ 	epson-inkjet-printer-escpr.spec.in \
+ 	lsb/lsb-rpm.spec \

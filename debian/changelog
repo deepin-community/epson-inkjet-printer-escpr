@@ -1,0 +1,463 @@
+epson-inkjet-printer-escpr (1.7.17-3) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Printing Team <debian-printing@lists.debian.org>  Thu, 12 May 2022 11:22:39 +0800
+
+epson-inkjet-printer-escpr (1.7.17-3) unstable; urgency=medium
+
+  * debian/watch: add fake watch file as upstream changes 
+                  the website too often
+  * debian/control: add Rules-Requires-Root:
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sat, 02 Apr 2022 11:20:05 +0200
+
+epson-inkjet-printer-escpr (1.7.17-2) unstable; urgency=medium
+
+  * update watch file
+  * debian/control: add myself to Uploaders:
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sat, 15 Jan 2022 23:20:05 +0000
+
+epson-inkjet-printer-escpr (1.7.17-1) unstable; urgency=medium
+
+  * New 1.7.17 version, to unstable
+
+  * Remove myself from Uploaders
+  * S-V: Update to 4.6.0 without changes needed
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 02 Sep 2021 13:56:00 +0200
+
+epson-inkjet-printer-escpr (1.7.10-1) experimental; urgency=low
+
+  * New 1.7.10 version
+
+  * Update watch file format version to 4.
+  * Run wrap-and-sort -baskt
+
+ -- Didier Raboud <odyx@debian.org>  Sun, 06 Jun 2021 13:32:36 +0200
+
+epson-inkjet-printer-escpr (1.7.8-1) unstable; urgency=medium
+
+  * New upstream version 1.7.7
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 24 Nov 2020 20:00:04 +0100
+
+epson-inkjet-printer-escpr (1.7.7-1) unstable; urgency=medium
+
+  * New upstream version 1.7.7
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 14 Jan 2020 08:34:54 +0100
+
+epson-inkjet-printer-escpr (1.7.5-1) unstable; urgency=medium
+
+  * New upstream version 1.7.5
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 05 Nov 2019 18:49:33 +0100
+
+epson-inkjet-printer-escpr (1.7.4-1) unstable; urgency=medium
+
+  * New upstream version 1.7.4
+
+  * Update standards version to 4.4.1, no changes needed.
+
+ -- Didier Raboud <odyx@debian.org>  Sat, 26 Oct 2019 10:02:13 +0200
+
+epson-inkjet-printer-escpr (1.7.3-1) unstable; urgency=low
+
+  * New upstream version 1.7.3, to unstable
+
+  * Convert from git dpm to debrebase
+  * Use secure URI in debian/watch.
+  * Set upstream metadata fields: Bug-Submit.
+  * Bump S-V to 4.4 without changes needed
+  * Bump debhelper from old 11 to 12.
+
+ -- Didier Raboud <odyx@debian.org>  Sun, 15 Sep 2019 10:42:26 +0200
+
+epson-inkjet-printer-escpr (1.6.41-1) experimental; urgency=medium
+
+  * New upstream version 1.6.41
+  * Add gitlab-ci configuration for Salsa
+
+ -- Didier Raboud <odyx@debian.org>  Sun, 23 Jun 2019 10:30:29 +0200
+
+epson-inkjet-printer-escpr (1.6.36-1) experimental; urgency=medium
+
+  * New upstream version 1.6.36
+  * Upload to experimental as buster's frozen
+
+ -- Didier Raboud <odyx@debian.org>  Sun, 24 Mar 2019 13:13:26 +0100
+
+epson-inkjet-printer-escpr (1.6.33-1) unstable; urgency=medium
+
+  * New upstream version 1.6.33
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 06 Dec 2018 21:11:07 +0100
+
+epson-inkjet-printer-escpr (1.6.32-1) unstable; urgency=medium
+
+  * New upstream version 1.6.32
+  * Bump S-V to 4.2.1 without changes
+  * Bump debhelper compat to 11
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 02 Nov 2018 13:31:04 +0100
+
+epson-inkjet-printer-escpr (1.6.21-1) unstable; urgency=medium
+
+  * New upstream version 1.6.21
+  * Bump S-V to 4.1.4 without changes needed
+  * Fix suc{,c}essful typo in debug message
+
+ -- Didier Raboud <odyx@debian.org>  Mon, 11 Jun 2018 20:11:15 +0200
+
+epson-inkjet-printer-escpr (1.6.17-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.1.3 without changes needed
+  * Update Vcs-* fields for the move to salsa.d.o
+
+ -- Didier Raboud <odyx@debian.org>  Sat, 10 Feb 2018 14:23:05 +0100
+
+epson-inkjet-printer-escpr (1.6.17-1) unstable; urgency=medium
+
+  * New upstream version 1.6.17
+    - Supported Series:
+      + ET-2610
+      + EW-M5071FT
+  * Drop debian/rules trailing spaces
+  * Set hardening=+all in DEB_BUILD_MAINT_OPTIONS
+
+ -- Didier Raboud <odyx@debian.org>  Sat, 25 Nov 2017 15:22:04 +0100
+
+epson-inkjet-printer-escpr (1.6.16-1) unstable; urgency=medium
+
+  * New upstream version 1.6.16
+    - Supported Series:
+      + EP-710A
+      + EP-810A
+      + ET-7700
+      + ET-7750
+      + EW-M970A3T
+      + L405
+      + L3050
+      + L3060
+      + L3070
+      + XP-540
+      + XP-640
+  * Bump S-V to 4.1.1 without changes needed
+  * Drop autotools_dev and autoreconf B-D and dh options, as these are default
+    in dh compat 10
+  * Update Vcs-Browser to use https
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 12 Oct 2017 17:42:54 +0200
+
+epson-inkjet-printer-escpr (1.6.13-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Supported Series:
+      - L380
+      - L382
+      + XP-340
+  * Bump S-V to 4.0.0: add and use autotools-dev for config.{sub,guess}
+    replacement
+  * Bump debhelper compat to 10
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 21 Jul 2017 21:03:14 +0200
+
+epson-inkjet-printer-escpr (1.6.11-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Supported new Series:
+      + ET-2600
+      + ET-2650
+      + L395
+      + L495
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 24 Jan 2017 17:41:44 +0100
+
+epson-inkjet-printer-escpr (1.6.10-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Supported new Series:
+      + EP-30VA
+      + EP-M570T
+      + EP-L364
+      + EP-L380
+      + EP-L382
+      + EP-L386
+      + EP-L486
+      + EP-L605
+  * Refresh patches
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 06 Dec 2016 09:23:36 +0100
+
+epson-inkjet-printer-escpr (1.6.8-1) unstable; urgency=medium
+
+  * New upstream release
+    - Supported new Series:
+      + EP-709A
+      + EP-979A3
+      + ET-16500
+      + L1455
+      + L385
+      + L485
+      + PX-049A
+      + XP-240
+      + XP-243 245 247
+      + XP-342 343 345
+      + XP-440
+      + XP-442 445
+      + XP-900
+
+  * Initialize git-dpm for patches management, update get-orig-source
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 27 Sep 2016 11:11:17 +0200
+
+epson-inkjet-printer-escpr (1.6.5-1) unstable; urgency=medium
+
+  * New upstream release
+    - Supported new models:
+      + WF-2750 Series
+      + WF-2760 Series
+  * Bump S-V to 3.9.8 without changes needed
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 28 Apr 2016 13:15:55 +0200
+
+epson-inkjet-printer-escpr (1.6.4-1) unstable; urgency=medium
+
+  * New upstream release
+    - Supported new models:
+      + XP-330 Series
+      + XP-430 Series
+  * Remove superfluous XS-Testsuite entry, should be added automatically
+  * Bump S-V to 3.9.7 without changes needed
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 25 Mar 2016 10:48:06 +0100
+
+epson-inkjet-printer-escpr (1.6.3-2) unstable; urgency=medium
+
+  [ Logan Rosen ]
+  * Add patch to include xfifo.h in src/filter.c to fix implicit function
+    declaration
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 23 Feb 2016 22:08:19 +0100
+
+epson-inkjet-printer-escpr (1.6.3-1) unstable; urgency=medium
+
+  * New 1.6.3 upstream release
+    - Supported new models
+    - For some models, we changed the ppd description, "*DefaultMediaType" from
+      PLAIN_DRAFT to PLAIN_NORMAL
+    - For some models, we added PLAIN_NORMAL and ENV_NORMAL as media type
+    - Added ppd files of following models
+     - PM-400 Series
+     - L805 Series
+     - WF-6530 Series
+     - EP-10VA Series
+     - PX-M860F
+     - PX-S860
+     - WP-M4011 Series
+     - WP-M4015 Series
+     - WP-M4095 Series
+     - WP-M4521 Series
+     - WP-M4525 Series
+     - WP-M4595 Series
+    - Speeding up of multiple page printing
+  * Refresh copyright file
+  * Try harder to merge upstream versions with a debian/ directory
+
+ -- Didier Raboud <odyx@debian.org>  Wed, 17 Feb 2016 21:57:09 +0100
+
+epson-inkjet-printer-escpr (1.5.2-1) unstable; urgency=medium
+
+  * New 1.5.2 upstream release
+    - Added ppd files of following models
+     - EP-808A Series
+     - EP-978A3 Series
+     - PF-81 Series
+     - ET-2500 Series
+     - ET-2550 Series
+     - ET-4500 Series
+     - ET-4550 Series
+    - Supported following options
+     - Brightness
+     - Contrast
+     - Saturation
+    - Updated ESC/P-R library to version 5.4
+  * Update get-orig-source target to be more tolerant
+
+ -- Didier Raboud <odyx@debian.org>  Sat, 26 Sep 2015 17:31:19 +0200
+
+epson-inkjet-printer-escpr (1.4.5-1) unstable; urgency=medium
+
+  * New 1.4.5 upstream version
+    - Added ppd files of following model series: L565, L566, L810, L850,
+      WF-M5690, WF-M5190, PF-70, PX-M350F, and PX-S350
+    - Fixed a problem when using "Rear Feed Slot" as InputSlot
+    - Added Postcard size for model series: WF-100 and PX-S05
+
+  * Bump Standards-Version to 3.9.6 without changes needed
+  * Add gbp.conf
+  * Remove patch that was an upstream backport
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 09 Jul 2015 16:36:55 +0200
+
+epson-inkjet-printer-escpr (1.4.1-2) unstable; urgency=medium
+
+  * Backport the 1.4.4 change:
+    - Fixed a problem when using "Rear Feed Slot" as InputSlot
+      (Closes: #755408)
+
+ -- Didier Raboud <odyx@debian.org>  Wed, 26 Nov 2014 13:36:11 +0100
+
+epson-inkjet-printer-escpr (1.4.1-1) unstable; urgency=medium
+
+  * New 1.4.1 upstream version
+  * Add autopkgtest suite
+
+ -- Didier Raboud <odyx@debian.org>  Mon, 28 Jul 2014 10:09:11 +0200
+
+epson-inkjet-printer-escpr (1.4.0-1) unstable; urgency=medium
+
+  * New 1.4.0 upstream version (Closes: #742264)
+    - Fixed a duplex printing bug which is reversed Long Edge and Short Edge
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 21 Mar 2014 13:30:16 +0100
+
+epson-inkjet-printer-escpr (1.3.0-2) unstable; urgency=medium
+
+  * Move the repository from collab-maint to printing; update the VCS-*
+    fields accordingly
+
+ -- Didier Raboud <odyx@debian.org>  Wed, 05 Mar 2014 16:59:34 +0100
+
+epson-inkjet-printer-escpr (1.3.0-1) unstable; urgency=low
+
+  * New 1.3.0 upstream version
+  * Bump Standards-Version to 3.9.5 without changes needed
+  * Drop epson-escpr transitional package which reached stable
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 29 Nov 2013 13:40:41 +0100
+
+epson-inkjet-printer-escpr (1.2.3-3) unstable; urgency=low
+
+  * Rebuild against pyppd >= 1.0.1-2~
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 01 Nov 2013 13:45:00 +0100
+
+epson-inkjet-printer-escpr (1.2.3-2) unstable; urgency=low
+
+  * Rebuild against pyppd >= 1.0.1
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 12 Sep 2013 21:05:27 +0200
+
+epson-inkjet-printer-escpr (1.2.3-1) unstable; urgency=low
+
+  * New 1.2.3 upstream version
+  * Bump debhelper build-depends to 9 to align with compat
+  * Don't try to install empty /usr/share/cups/
+
+ -- Didier Raboud <odyx@debian.org>  Sun, 16 Jun 2013 09:33:39 +0200
+
+epson-inkjet-printer-escpr (1.2.2-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 16 May 2013 22:45:51 +0200
+
+epson-inkjet-printer-escpr (1.2.2-1) experimental; urgency=low
+
+  * New 1.2.2 upstream version.
+  * Update patches.
+    - Drop the shared files (old .csv file) relocation;
+    - Refresh the debian/ files protector.
+  * Move internal library to private namespace as there is zero ABI guarantee.
+    - 1.1.2 and 1.2.2 have _zero_ symbols in common.
+    - Drop libescpr1 and libescpr-dev packages in favour of an install to a
+      private library folder.
+  * Update homepage and debian/watch to cope with the Avasys => Epson
+    relocation.
+  * Bump Standards-Version to 3.9.4 without changes needed.
+
+ -- Didier Raboud <odyx@debian.org>  Sun, 11 Nov 2012 11:01:21 +0100
+
+epson-inkjet-printer-escpr (1.1.1-2) unstable; urgency=low
+
+  * Install the overseen paper_list.csv. (Closes: #653426)
+    - Override pkgdatadir to install it to /usr/share/printer-driver-escpr;
+    - Add --fail-missing to dh_install to catch future mistakes.
+    Reported-by: Dave Thayer
+
+ -- Didier Raboud <odyx@debian.org>  Wed, 28 Dec 2011 11:59:28 +0100
+
+epson-inkjet-printer-escpr (1.1.1-1) unstable; urgency=low
+
+  * New 1.1.1 upstream release.
+
+  * Add a check for the VERSION envvar in get-orig-source.
+
+ -- Didier Raboud <odyx@debian.org>  Wed, 07 Dec 2011 15:19:44 +0100
+
+epson-inkjet-printer-escpr (1.1.0-2) unstable; urgency=low
+
+  * Correct the PPD-updater trigger regexp.
+
+ -- Didier Raboud <odyx@debian.org>  Mon, 24 Oct 2011 16:16:07 +0200
+
+epson-inkjet-printer-escpr (1.1.0-1) unstable; urgency=low
+
+  * New 1.1.0 upstream release.
+    - Split SetGlobalBasePointData in two exported symbols.
+    - Make sure package is buildable twice in a row by preserving m4-macros.
+
+  * Refactoring, action 1:
+    - Rename epson-escpr to printer-driver-escpr, add transitional package.
+
+  * Patches update:
+    - Drop link_to_debian_libs.patch: not needed anymore.
+    + Add dont_touch_debian_files.patch: needed with the new upstream.
+
+  * Drop superfluous shebang from ppd-updater snippet.
+  * Correct debian/copyright syntax.
+  * Slightly rewrite short descriptions.
+  * Only recommend cups-ppdc.
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 21 Oct 2011 16:27:09 +0200
+
+epson-inkjet-printer-escpr (1.0.4-2) unstable; urgency=low
+
+  * Replace the PPD-updater postinst by CUPS' trigger.
+    - Breaks against too old cups versions.
+    - Add a ppd-updater file, to trigger with parameters.
+  * Convert libescpr1 library to multiarch.
+    - Bump B-D on debhelper to 8.9.3~.
+    - Bump debhelper compatibility level to 9..
+    - Override lintian warning about debhelper being too young.
+    - Update *.install files to cope with new library paths.
+    - Add a Pre-Depends on multiarch-support to the libescpr1 package.
+    - Add Multi-Arch: same to the libescpr1 package.
+  * Use dh_pyppd.
+    - Version B-D on pyppd.
+    - Install the PPD files before running pyppd.
+    - Use --with pyppd and drop the hand-launch of pyppd.
+    - Drop the explicit depends needed by pyppd.
+
+ -- Didier Raboud <odyx@debian.org>  Wed, 17 Aug 2011 22:22:58 +0200
+
+epson-inkjet-printer-escpr (1.0.4-1) unstable; urgency=low
+
+  * New 1.0.4 upstream release:
+    - Fixed a problem which streched printout when switching to monochrome
+      mode.
+  * Implement get-orig-source target in debian/rules to cope with upstream
+    source rpms.
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 26 Jul 2011 19:59:21 +0200
+
+epson-inkjet-printer-escpr (1.0.3-1) unstable; urgency=low
+
+  * Initial release. (Closes: #630810, LP: #555200)
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 17 Jun 2011 16:43:11 +0200

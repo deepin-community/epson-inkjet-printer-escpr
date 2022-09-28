@@ -1,0 +1,20 @@
+From: Logan Rosen <logan@ubuntu.com>
+Date: Tue, 27 Sep 2016 10:42:32 +0200
+Subject: Include xfifo.h to avoid implicit pointer conversion
+
+---
+ src/filter.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/filter.c b/src/filter.c
+index f3e41ff..11aa651 100644
+--- a/src/filter.c
++++ b/src/filter.c
+@@ -41,6 +41,7 @@
+ #include "libprtX.h"
+ #include "optBase.h"
+ #include "linux_cmn.h"
++#include "xfifo.h"
+ 
+ #define WIDTH_BYTES(bits) (((bits) + 31) / 32 * 4)
+ 

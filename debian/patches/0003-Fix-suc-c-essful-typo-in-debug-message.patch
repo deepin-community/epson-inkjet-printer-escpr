@@ -1,0 +1,21 @@
+From: Didier Raboud <odyx@debian.org>
+Date: Mon, 11 Jun 2018 20:08:46 +0200
+Subject: Fix suc{,c}essful typo in debug message
+
+---
+ src/filter.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/filter.c b/src/filter.c
+index 11aa651..c5d11bc 100644
+--- a/src/filter.c
++++ b/src/filter.c
+@@ -550,7 +550,7 @@ main (int argc, char *argv[])
+ 				pagebuf = startpage;
+ 				free (pagebuf);
+ 			}
+-			debug_msg("free page sucessfull\n");
++			debug_msg("free page successfull\n");
+ 			err = epsEndPage(FALSE);
+ 
+ 			if(err)

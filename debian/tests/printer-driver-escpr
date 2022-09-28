@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/cups/ppd-updaters/printer-driver-escpr.ppd-updater
+
+/usr/share/cups/test-drivers -n adt-test-escpr-0 -r $DRIVER_REGEXP

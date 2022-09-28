@@ -1,0 +1,9 @@
+version=4
+opts=dversionmangle=s/.*/0.No-Site/ \
+https://people.debian.org/~eriberto/ FakeWatchNoUpstreamSiteForThisPackage-(\d\S+)\.gz
+
+# upstream seems to often change the website, so a watch file does not make sense here
+#version=4
+#opts="user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0"
+#opts="pagemangle=s%javascript:driver_download\(\s*%<a href=%g" \
+#https://download.ebz.epson.net/dsc/du/02/DriverDownloadInfo.do?LG2=EN&CN2=&DSCMI=129978 .*/epson-inkjet-printer-escpr-([\d+\.]*\d+)-1lsb[\d+\.]*\d+\.tar\.gz
